@@ -37,35 +37,25 @@ arr.forEach((number, index) =>{
     if(index > 0){
 
         totalFinal = sum(totalFinal, number);
+        resultFinal = substract(resultFinal, number);
+        productFinal = multiply(productFinal, number);
+        quotientFinal = divide(quotientFinal, number);
 
-        if(totalFinal == 70){
+        if(totalFinal == 70){ //para no mostrar los valores residuales en la consola
             console.log(totalFinal);
         }
 
-    }
-
-    if(index > 0){
-        resultFinal = substract(resultFinal, number);
-
-        if(resultFinal == -50){
+        if(resultFinal == -50){ //para no mostrar los valores residuales en la consola
             console.log(resultFinal);
         }
-    }
 
-    if(index > 0){
-        productFinal = multiply(productFinal, number);
-
-        if(productFinal == 37500){
+        if(productFinal == 37500){ //para no mostrar los valores residuales en la consola
             console.log(productFinal);
         }
-    }
 
-    if(index > 0){
-        quotientFinal = divide(quotientFinal, number);
-
-        if(quotientFinal == 0.0026666666666666666){
+        if(quotientFinal == 0.0026666666666666666){ //para no mostrar los valores residuales en la consola
             console.log(quotientFinal);
         }
-        
+
     }
     });
